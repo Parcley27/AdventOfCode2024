@@ -1,4 +1,9 @@
+import os
+
 inputFile = "Day 2 Input.txt"
+
+script_dir = os.path.dirname(__file__)
+inputFile = os.path.join(script_dir, inputFile)
 
 input = []
 
