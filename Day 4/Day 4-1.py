@@ -10,6 +10,7 @@ input = []
 with open(inputFile, "r") as file:
     for line in file:
         row = []
+
         for character in line:
             if character != "\n":
                 row.append(character)
@@ -35,7 +36,6 @@ for letter in wordToFind:
     wordLetters.append(letter)
 
 occurences = 0
-
 
 for row in range(len(input)):
     for square in range(len(input[row])):
